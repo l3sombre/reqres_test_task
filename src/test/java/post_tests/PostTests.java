@@ -13,7 +13,8 @@ public class PostTests extends BaseTests {
 
 
     /**
-     * tests whether HTTP status code is valid for POST-method
+     * Tests whether HTTP status code is valid for POST-method;
+     * 2nd test-case
      */
     @Test
     public void testStatusCode() {
@@ -27,8 +28,9 @@ public class PostTests extends BaseTests {
 
 
     /**
-     * tests whether the values in the response payload are valid
-     * when null-valued parameters have been sent in request body
+     * Tests whether the values in the response payload are valid
+     * when null-valued parameters have been sent in request body;
+     * 14th test-case
      */
     @Test
     public void testNullValuesInBody() {
@@ -46,8 +48,9 @@ public class PostTests extends BaseTests {
 
 
     /**
-     * tests whether the keys in the response payload are valid
-     * when invalid key-value pairs have been sent in request body
+     * Tests whether the keys in the response payload are valid
+     * when invalid key-value pairs have been sent in request body;
+     * 15th test-case
      */
     @Test
     public void testInvalidKeysInBody() {
@@ -63,7 +66,8 @@ public class PostTests extends BaseTests {
     }
 
     /**
-     * tests and verifies the response payload of POST-method
+     * Tests and verifies the response payload of POST-method;
+     * 6th test-case
      */
     @Test
     public void testResponsePayload(){
@@ -85,7 +89,8 @@ public class PostTests extends BaseTests {
     }
 
     /**
-     * tests and verifies the response header of POST-method
+     * Tests and verifies the response header of POST-method;
+     * 10th test-case
      */
     @Test
     public void testResponseHeader(){

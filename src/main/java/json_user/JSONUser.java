@@ -1,6 +1,11 @@
 package json_user;
 import org.json.simple.JSONObject;
 
+
+/**
+ * The class handles JSON-object representing user
+ */
+
 public class JSONUser {
     JSONObject obj = new JSONObject();
 

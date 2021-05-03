@@ -5,6 +5,10 @@ import io.restassured.RestAssured;
 import org.junit.BeforeClass;
 
 
+/**
+ * Simple configuration of the tests
+ */
+
 public class BaseTests {
 
     @BeforeClass

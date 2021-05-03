@@ -12,7 +12,8 @@ public class PutTests extends BaseTests {
 
 
     /**
-     * tests and verifies the response payload of PUT-method
+     * Tests and verifies the response payload of PUT-method;
+     * 7th test-case
      */
     @Test
     public void testResponsePayload() {
@@ -32,7 +33,8 @@ public class PutTests extends BaseTests {
 
 
     /**
-     * tests whether HTTP status code is valid for PUT-method
+     * Tests whether HTTP status code is valid for PUT-method;
+     * 3rd test-case
      */
     @Test
     public void testStatusCode() {
@@ -45,7 +47,8 @@ public class PutTests extends BaseTests {
 
 
     /**
-     * tests and verifies the response header of PUT-method
+     * Tests and verifies the response header of PUT-method;
+     * 11th test-case
      */
     @Test
     public void testResponseHeader() {

@@ -10,7 +10,8 @@ public class DeleteTests extends BaseTests {
 
 
     /**
-     * tests whether HTTP status code is valid for DELETE-method
+     * Tests whether HTTP status code is valid for DELETE-method;
+     * 4th test-case
      */
     @Test
     public void testStatusCode() {
@@ -27,8 +28,9 @@ public class DeleteTests extends BaseTests {
     }
 
     /**
-     * tests whether HTTP status code is 404 after deleting just created user
-     * after attempting to get the one
+     * Tests whether HTTP status code is valid after deleting just created user
+     * and after attempting to get the one;
+     * 8th test-case
      */
     @Test
     public void testIfUserIsDeleted(){

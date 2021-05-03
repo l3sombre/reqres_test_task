@@ -12,7 +12,8 @@ public class GetTests extends BaseTests {
 
 
     /**
-     * Tests whether HTTP status code is valid for GET-method
+     * Tests whether HTTP status code is valid for GET-method;
+     * 1st test-case
      */
     @Test
     public void testStatusCode(){
@@ -22,7 +23,8 @@ public class GetTests extends BaseTests {
     }
 
     /**
-     * Tests whether specified delay time is greater or equal to actual one
+     * Tests whether specified delay time is greater or equal to actual one;
+     * 12th test-case
      */
     @Test
     public void testDelayTime(){
@@ -34,7 +36,8 @@ public class GetTests extends BaseTests {
 
     /**
      * Tests whether the status code is 404 and the response payload is empty
-     * when the invalid path parameter has sent
+     * when the invalid path parameter has sent;
+     * 13th test-case
      */
     @Test
     public void testUserWithInvalidId(){
@@ -45,7 +48,8 @@ public class GetTests extends BaseTests {
     }
 
     /**
-     * Tests and verifies the response payload of GET-method
+     * Tests and verifies the response payload of GET-method;
+     * 5th test-case
      */
     @Test
     public void testResponsePayload(){
@@ -65,7 +69,8 @@ public class GetTests extends BaseTests {
     }
 
     /**
-     * Tests and verifies the response header of GET-method
+     * Tests and verifies the response header of GET-method;
+     * 9th test-case
      */
     @Test
     public void testResponseHeader(){
