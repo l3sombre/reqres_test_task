@@ -33,17 +33,27 @@ public class PostTests extends BaseTests {
      * 14th test-case
      */
     @Test
-    public void testNullValuesInBody() {
+    public void testNullValuesInBody() throws AssertionError {
         JSONUser user = new JSONUser(null,null);
+        boolean success = false;
 
-        given().
-            header("Content-Type", "application/json").
-            contentType(ContentType.JSON).
-            body(user.toJSONString()).
-                when().post("/api/users").
+        try {
+            given().
+                    header("Content-Type", "application/json").
+                    contentType(ContentType.JSON).
+                    body(user.toJSONString()).
+                    when().post("/api/users").
                     then().
                     body("name", notNullValue()).and().
                     body("job", notNullValue());
+            success = true;
+        }
+        catch (AssertionError error) {
+        }
+         if (success) {
+             throw new AssertionError("The test has to be failed because of null parameter values in the request.");
+         }
+
     }
 
 
@@ -53,16 +63,27 @@ public class PostTests extends BaseTests {
      * 15th test-case
      */
     @Test
-    public void testInvalidKeysInBody() {
+    public void testInvalidKeysInBody() throws AssertionError {
         JSONObject obj = new JSONObject();
         obj.put("flower", "dandelion");
         obj.put("job", "stylist");
 
-        given().contentType(ContentType.JSON).
-                body(obj.toJSONString()).when().post("/api/users")
-                .then().assertThat().
-                body("$", hasKey("name")).and().
-                body("$", hasKey("job"));
+        boolean success = false;
+        try {
+            given().contentType(ContentType.JSON).
+                    body(obj.toJSONString()).when().post("/api/users")
+                    .then().assertThat().
+                    body("$", hasKey("name")).and().
+                    body("$", hasKey("job"));
+            success = true;
+        }
+        catch (AssertionError error) {
+        }
+        if (success) {
+            throw new AssertionError("The test has to be failed because of invalid key values in the request.");
+        }
+
+
     }
 
     /**
